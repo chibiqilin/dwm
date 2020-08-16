@@ -71,7 +71,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          {.v = browsercmd } },
 	{ 0,                            XK_Print,  spawn,          {.v = scrotcmd } },
 	{ ShiftMask,                    XK_Print,  spawn,          {.v = scrotfocusedcmd } },
-	{ ControlMask,                  XK_Print,  spawn,          {.v = scrotselectcmd } },
+	{ ControlMask,                  XK_Print,  spawn,          SHCMD("sleep 1s;scrot --select") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
