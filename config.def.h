@@ -61,7 +61,6 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "chromium", NULL };
 static const char *scrotcmd[] = { "scrot", "-t", "25", NULL };
 static const char *scrotfocusedcmd[] = { "scrot", "--focused", NULL };
-static const char *scrotselectcmd[] = { "scrot", "--select", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
